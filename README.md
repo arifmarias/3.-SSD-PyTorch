@@ -97,12 +97,12 @@ For setting up the VOC 2007 dataset:
 * In case you have GPU which does not support large batch size, you can use a smaller batch size like 2 and then have `acc_steps` in config set as 4(to mimic 8 batch size training).
 * For using a different backbone you would have to change the following:
   * Change the backbone, extra conv layers and creation of feature maps in initialization of SSD model
-  * Ensure the `out_channels` is correctly set as the channels in all feature maps to be used for prediction [here](https://github.com/arifmarias/SSD-PyTorch/blob/main/model/ssd.py#L316)
-  * In the forward method call the backbone and extra conv layers and ensure `outputs` is correctly set as list of feature maps [here](https://github.com/arifmarias/SSD-PyTorch/blob/main/model/ssd.py#L472)
+  * Ensure the `out_channels` is correctly set as the channels in all feature maps to be used for prediction [here](https://github.com/arifmarias/3.-SSD-PyTorch/blob/main/model/ssd.py#L316)
+  * In the forward method call the backbone and extra conv layers and ensure `outputs` is correctly set as list of feature maps [here](https://github.com/arifmarias/3.-SSD-PyTorch/blob/main/model/ssd.py#L472)
 
 # Quickstart
 * Create a new conda environment with python 3.10 then run below commands
-* ```git clone https://github.com/arifmarias/SSD-PyTorch.git```
+* ```git clone https://github.com/arifmarias/3.-SSD-PyTorch```
 * ```cd SSD-PyTorch```
 * ```pip install -r requirements.txt```
 * For training/inference use the below commands passing the desired configuration file as the config argument in case you want to play with it. 
